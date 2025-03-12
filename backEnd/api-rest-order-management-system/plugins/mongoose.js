@@ -6,7 +6,7 @@ require("dotenv").config();
 
 module.exports = fp(async function (fastify, opts) {
   try {
-    await mongoose.connect(process.env.MONGO_URL);
+    await mongoose.connect("mongodb+srv://devgabrielcontato:Geraldomanguela@cluster0.3es4l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
     fastify.decorate("mongoose", mongoose);
     fastify.log.info("MongoDB successfully connected!");
