@@ -1,10 +1,12 @@
 import React from "react";
 
+
+
 const LandingPage = () => {
   return (
     <div className="font-sans text-gray-900">
       {/* Navbar */}
-      <nav className="bg-white shadow-md fixed w-full z-10">
+      {/* <nav className="bg-white shadow-md fixed w-full z-10">
         <div className="container mx-auto flex justify-between items-center p-4">
           <h1 className="text-2xl font-bold text-red-600">🍽️ Restaurante</h1>
           <ul className="flex space-x-6">
@@ -30,14 +32,14 @@ const LandingPage = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
 
-      {/* Hero Section */}
+      {/* Hero Section
       <header
         className="bg-cover bg-center h-screen"
         style={{
           backgroundImage:
-            "url('https://source.unsplash.com/1600x900/?restaurant')",
+            "url('https://via.placeholder.com/1600x900')",
         }}
       >
         <div className="h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center px-6">
@@ -54,7 +56,7 @@ const LandingPage = () => {
             Ver Menu
           </a>
         </div>
-      </header>
+      </header> */}
 
       {/* Sobre nós */}
       <section id="about" className="container mx-auto py-16 px-6">
@@ -82,7 +84,7 @@ const LandingPage = () => {
               >
                 <img
                   className="w-full h-40 object-cover rounded-md"
-                  src={`https://source.unsplash.com/300x200/?food&sig=${item}`}
+                  src={`https://placehold.co/300x200`}
                   alt="Prato"
                 />
                 <h3 className="text-xl font-semibold mt-4">
