@@ -1,62 +1,32 @@
 import React from "react";
-
-
+import { Link } from "react-router";
 
 const LandingPage = () => {
   return (
     <div className="font-sans text-gray-900">
-      {/* Navbar */}
-      {/* <nav className="bg-white shadow-md fixed w-full z-10">
-        <div className="container mx-auto flex justify-between items-center p-4">
-          <h1 className="text-2xl font-bold text-red-600">🍽️ Restaurante</h1>
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#about" className="hover:text-red-500">
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a href="#menu" className="hover:text-red-500">
-                Menu
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="hover:text-red-500">
-                Depoimentos
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-red-500">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
-
-      {/* Hero Section
+      {/* Hero Section */}
       <header
         className="bg-cover bg-center h-screen"
         style={{
-          backgroundImage:
-            "url('https://via.placeholder.com/1600x900')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
         }}
       >
-        <div className="h-full flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center px-6">
+        <div className="h-full flex flex-col items-center justify-center bg-opacity-50 text-white text-center px-6">
           <h2 className="text-5xl font-extrabold">
             Bem-vindo ao Nosso Restaurante
           </h2>
           <p className="mt-4 text-lg">
             Experimente pratos incríveis e sabores inesquecíveis.
           </p>
-          <a
-            href="#menu"
-            className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg"
+          <Link
+            to=""
+            // className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg"
+            className="custom-button"
           >
-            Ver Menu
-          </a>
+            Criar conta
+          </Link>
         </div>
-      </header> */}
+      </header>
 
       {/* Sobre nós */}
       <section id="about" className="container mx-auto py-16 px-6">
@@ -119,7 +89,7 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-gray-900 text-white py-6 text-center">
+      {/* <footer id="contact" className="bg-gray-900 text-white py-6 text-center">
         <h2 className="text-xl font-bold">Entre em Contato</h2>
         <p>📍 Endereço: Rua do Sabor, 123 - Cidade</p>
         <p>📞 Telefone: (11) 99999-9999</p>
@@ -135,7 +105,7 @@ const LandingPage = () => {
             Twitter
           </a>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };

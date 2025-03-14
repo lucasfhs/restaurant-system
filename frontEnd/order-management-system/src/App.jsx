@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 // Importa automaticamente todas as rotas do diretório "routes"
 const routeModules = import.meta.glob("./routes/*.jsx");
@@ -34,7 +35,7 @@ const App = () => {
         ))}
       </Routes>
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };
