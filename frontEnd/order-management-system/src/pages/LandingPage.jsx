@@ -19,18 +19,17 @@ const LandingPage = () => {
             Experimente pratos incríveis e sabores inesquecíveis.
           </p>
           <Link
-            to=""
-            // className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg"
-            className="custom-button"
+            to="/login"
+            className="mt-6 bg-primary hover:bg-red-700 text-white px-6 py-3 rounded-lg"
           >
-            Criar conta
+            Fazer login
           </Link>
         </div>
       </header>
 
       {/* Sobre nós */}
       <section id="about" className="container mx-auto py-16 px-6">
-        <h2 className="text-3xl font-bold text-center text-red-600">
+        <h2 className="text-3xl font-bold text-center text-primary">
           Sobre Nós
         </h2>
         <p className="text-center mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -43,7 +42,7 @@ const LandingPage = () => {
       {/* Menu em destaque */}
       <section id="menu" className="bg-gray-100 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-red-600">
+          <h2 className="text-3xl font-bold text-center text-primary">
             Nosso Menu
           </h2>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,7 +62,7 @@ const LandingPage = () => {
                 <p className="text-gray-600 mt-2">
                   Descrição deliciosa do prato.
                 </p>
-                <p className="text-red-600 font-bold mt-2">R$ {item * 20},00</p>
+                <p className="text-primary font-bold mt-2">R$ {item * 20},00</p>
               </div>
             ))}
           </div>
@@ -72,7 +71,7 @@ const LandingPage = () => {
 
       {/* Depoimentos */}
       <section id="testimonials" className="container mx-auto py-16 px-6">
-        <h2 className="text-3xl font-bold text-center text-red-600">
+        <h2 className="text-3xl font-bold text-center text-primary">
           Depoimentos
         </h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">

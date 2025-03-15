@@ -3,7 +3,7 @@
 @layer components {
     /* Custom button styles */
     .custom-button {
-      @apply mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg;
+      @apply px-4 bg-primary text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition;
 
     }
     
@@ -16,4 +16,19 @@
     .custom-paragraph {
       @apply mt-4 text-lg;
     } 
+
+    /* Custom glass property */
+    .glass {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5.6px);
+      -webkit-backdrop-filter: blur(5.6px);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+    }
+}
+
+/* Custom theme variables */
+@theme {
+  --color-primary: #bb0000;
 }
