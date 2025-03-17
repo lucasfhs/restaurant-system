@@ -40,7 +40,7 @@ const LandingPage = () => {
       </section>
 
       {/* Menu em destaque */}
-      <section id="menu" className="bg-gray-100 py-16">
+      <section id="menu" className="bg-gradient-to-l from-transparent via-gray-200 to-transparent py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-primary">
             Nosso Menu
@@ -49,7 +49,7 @@ const LandingPage = () => {
             {[1, 2, 3].map((item) => (
               <div
                 key={item}
-                className="bg-white rounded-lg shadow-lg p-6 text-center"
+                className="glass rounded-lg shadow-lg p-6 text-center"
               >
                 <img
                   className="w-full h-40 object-cover rounded-md"
