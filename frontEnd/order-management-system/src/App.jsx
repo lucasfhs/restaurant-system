@@ -27,15 +27,11 @@ const App = () => {
 
   return (
     <div>
-      <NavBar></NavBar>
-
       <Routes>
         {routes.map((route, index) => (
           <Route key={index} path={route.path} element={route.element} />
         ))}
       </Routes>
-
-      <Footer></Footer>
     </div>
   );
 };

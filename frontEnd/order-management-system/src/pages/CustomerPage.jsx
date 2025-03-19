@@ -2,10 +2,10 @@ import { useState } from "react";
 import { ShoppingCart, CheckCircle, Trash2 } from "lucide-react";
 
 const menuItems = [
-  { id: 1, name: "Pizza", price: 39.90 },
-  { id: 2, name: "Hambúrguer", price: 24.90 },
-  { id: 3, name: "Batata Frita", price: 12.90 },
-  { id: 4, name: "Refrigerante", price: 7.50 },
+  { id: 1, name: "Pizza", price: 39.9 },
+  { id: 2, name: "Hambúrguer", price: 24.9 },
+  { id: 3, name: "Batata Frita", price: 12.9 },
+  { id: 4, name: "Refrigerante", price: 7.5 },
 ];
 
 export default function CustomerPage() {
@@ -27,14 +27,18 @@ export default function CustomerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 pt-24"> {/* Added mt-16 for margin top */}
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 pt-24">
+      {" "}
+      {/* Added mt-16 for margin top */}
       <h1 className="text-2xl font-bold mb-4">Menu do Restaurante</h1>
-
       <div className="w-full max-w-lg">
         <h2 className="text-lg font-semibold mb-2">Cardápio</h2>
         <div className="grid grid-cols-2 gap-4">
           {menuItems.map((item) => (
-            <div key={item.id} className="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+            <div
+              key={item.id}
+              className="bg-white p-4 rounded-xl shadow-md flex flex-col items-center"
+            >
               <p className="font-semibold">{item.name}</p>
               <p className="text-gray-500">R$ {item.price.toFixed(2)}</p>
               <button
@@ -54,11 +58,17 @@ export default function CustomerPage() {
         ) : (
           <div className="bg-white p-4 rounded-xl shadow-md">
             {cart.map((item) => (
-              <div key={item.id} className="flex justify-between items-center mb-2">
+              <div
+                key={item.id}
+                className="flex justify-between items-center mb-2"
+              >
                 <p className="font-semibold">{item.name}</p>
                 <div className="flex items-center">
                   <p className="text-gray-500">R$ {item.price.toFixed(2)}</p>
-                  <button className="ml-2 text-red-500" onClick={() => removeFromCart(item.id)}>
+                  <button
+                    className="ml-2 text-red-500"
+                    onClick={() => removeFromCart(item.id)}
+                  >
                     <Trash2 size={16} />
                   </button>
                 </div>
