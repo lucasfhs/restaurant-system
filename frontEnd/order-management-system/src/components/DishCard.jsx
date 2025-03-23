@@ -18,7 +18,7 @@ const DishCard = ({ dish }) => {
   
           {/* Preço e botão */}
           <div className="flex justify-between items-center mt-3">
-            <span className="text-lg font-semibold text-green-400">
+            <span className="text-lg font-semibold text-green-500">
               R$ {dish.price.toFixed(2)}
             </span>
             <button className="bg-primary text-white px-3 py-1 rounded-md text-sm font-medium hover:bg-red-800 transition">

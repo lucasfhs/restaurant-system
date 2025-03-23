@@ -8,7 +8,7 @@ import TestimonialCard from "../../../components/TestimonialCard";
 
 const testimonials = [
   {
-    name: "Carlos Souza",
+    name: "Caio Lopes",
     text: "Ótima experiência! A comida chegou rápido e deliciosa. Recomendo muito!",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-white w-full">
+    <section className="bg-white w-full py-12">
       <div className=" flex flex-col items-center justify-center container mx-auto max-w-5xl p-10 gap-6">
         <div className="max-w-sm sm:max-w-md md:max-w-xl lg:max-w-2xl mx-auto text-center w-full">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">

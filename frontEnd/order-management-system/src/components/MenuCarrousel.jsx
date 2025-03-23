@@ -13,7 +13,7 @@ const MenuCarousel = () => {
   ];
 
   return (
-    <div className="px-4 py-6">
+    <div className="py-8">
       <Swiper
         slidesPerView={2}
         spaceBetween={16}
@@ -24,12 +24,12 @@ const MenuCarousel = () => {
         speed={1500} // Ajusta a velocidade da transição (1.5s)
         // autoplay={{ delay: 2000 }}
         // freeModeMomentumRatio={0.8} // Ajusta a inércia da rolagem
-        className="w-full max-w-5xl mx-auto !overflow-visible"
+        className="!overflow-visible"
       >
         {dishes.map((dish, index) => (
           <SwiperSlide
             key={index}
-            className="!w-fit  rounded-lg flex items-center justify-center transform transition-transform duration-300 hover:scale-105"
+            className="!w-fit rounded-lg flex items-center justify-center"
           >
             <DishCard dish={dish} />
           </SwiperSlide>
