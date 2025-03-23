@@ -21,7 +21,7 @@
 
 .bg-hero {
   background-image: url("../assets/login-bg.webp");
-  background-position: center;
+  background-position:top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(200, 100, 0, 0.4); /* Preto semi-transparente */

@@ -7,7 +7,7 @@ const NavBar = () => {
       <nav className="glass shadow-md fixed w-full z-10">
         <div className=" container mx-auto flex justify-between items-center p-4">
           <Link to="/" className="text-2xl font-bold text-primary">
-            🍽️ Restaurante
+            🍽️   Restaurante
           </Link>
           <ul className="flex space-x-6">
             <li>
