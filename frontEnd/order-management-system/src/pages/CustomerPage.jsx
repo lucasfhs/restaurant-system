@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ShoppingCart, CheckCircle, Trash2 } from "lucide-react";
+import { useUserId } from "../context/UserIdProvider";
 
 const menuItems = [
   { id: 1, name: "Pizza", price: 39.9 },
@@ -9,6 +10,7 @@ const menuItems = [
 ];
 
 export default function CustomerPage() {
+  const { userId } = useUserId();
   const [cart, setCart] = useState([]);
   const [orderPlaced, setOrderPlaced] = useState(false);
 
@@ -28,8 +30,11 @@ export default function CustomerPage() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 pt-24">
-      {" "}
-      {/* Added mt-16 for margin top */}
+      <header className="w-full bg-blue-500 text-white py-4 px-6 text-center">
+        <h1 className="text-lg font-bold">Bem-vindo, Usuário ID: {userId}</h1>
+      </header>
+
+      
       <h1 className="text-2xl font-bold mb-4">Menu do Restaurante</h1>
       <div className="w-full max-w-lg">
         <h2 className="text-lg font-semibold mb-2">Cardápio</h2>

@@ -20,11 +20,6 @@ export default function Header() {
       style={{
         backgroundColor: `rgba(0, 0, 0, ${scrollProgress * 0.2})`, // Dynamically set background color
       }}
-      // style={{
-      //   backgroundColor: `rgba(255, 255, 255, ${scrollProgress * 0.3})`, // Aumenta a opacidade de 0 a 0.8
-      //   backdropFilter: `blur(${scrollProgress * 10}px)`, // Aumenta o desfoque de 0 a 10px
-      //   boxShadow: scrollProgress > 0 ? "0px 4px 10px rgba(0,0,0,0.1)" : "none",
-      // }}
     >
       <div
         id="globalHeader-content"

@@ -1,40 +1,19 @@
 @import "tailwindcss";
-/* @import "./customStyles.css"; */
+@import "./customStyles.css";
 
 * {
   /* margin: 0;
   padding: 0; */
   box-sizing: border-box;
 }
-@theme {
-  --color-primary: rgba(210, 18, 46, 1);
-  --color-primary-100: rgba(210, 18, 46, 0.1);
-  --color-primary-200: rgba(210, 18, 46, 0.2);
-  --color-primary-300: rgba(210, 18, 46, 0.3);
-  --color-primary-400: rgba(210, 18, 46, 0.4);
-  --color-primary-500: rgba(210, 18, 46, 0.5);
-  --color-primary-600: rgba(210, 18, 46, 0.6);
-  --color-primary-700: rgba(210, 18, 46, 0.7);
-  --color-primary-800: rgba(210, 18, 46, 0.8);
-  --color-primary-900: rgba(210, 18, 46, 0.9);
-}
 
-.bg-hero {
-  background-image: url("../assets/login-bg.webp");
-  background-position:top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(200, 100, 0, 0.4); /* Preto semi-transparente */
-  background-blend-mode: multiply; /* Mistura as camadas */
-  z-index: -200;
-}
 
-.glass {
-  /* From https://css.glass */
+
+/* .glass {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.3px);
   -webkit-backdrop-filter: blur(9.3px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-}
+} */

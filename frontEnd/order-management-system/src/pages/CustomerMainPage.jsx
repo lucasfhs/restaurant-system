@@ -20,7 +20,6 @@ const CustomerMainPage = () => {
     setCart(cart.filter((_, i) => i !== index));
   };
 
-
     return (
       <div className="min-h-screen flex pt-16">
         {/* Coluna Esquerda (Navegação) */}

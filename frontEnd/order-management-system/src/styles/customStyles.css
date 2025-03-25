@@ -4,7 +4,6 @@
     /* Custom button styles */
     .custom-button {
       @apply px-4 bg-primary text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition;
-
     }
     
     /* Custom header styles */
@@ -91,7 +90,19 @@
       border-color: rgba(255, 255, 255, 0.6);
       box-shadow: 0 8px 30px rgba(255, 255, 255, 0.4);
     }
+
+    .bg-hero {
+      background-image: url("../assets/login-bg.webp");
+      background-position:top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(200, 100, 0, 0.4); /* Preto semi-transparente */
+      background-blend-mode: multiply; /* Mistura as camadas */
+      z-index: -200;
+    }
 }
+
+
 
 /* Custom theme variables */
 @theme {
